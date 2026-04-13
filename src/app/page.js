@@ -1,13 +1,27 @@
+import Image from 'next/image';
 import React from 'react';
 
+import { IoLogoGooglePlaystore } from 'react-icons/io5';
+import { FaAppStoreIos } from 'react-icons/fa';
+
+import Banner from '@/component/Banner';
+import Stat from '@/component/Stat';
+import AllApps from './apps/page';
+import AllAppsPage from '@/component/AllAppsPage';
+
 const HomePage =async () => {
-  const res =await fetch('https://jsonplaceholder.typicode.com/users');
-  const data=await res.json()
-  console.log(data)
+  
   return (
     <div>
-      
-    </div>
+  <Banner></Banner>
+<Stat></Stat>
+
+<main>
+  <AllAppsPage></AllAppsPage>
+</main>
+</div>
+
+  
   );
 };
 
