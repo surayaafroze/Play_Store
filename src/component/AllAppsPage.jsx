@@ -1,23 +1,29 @@
 
+import Link from "next/link";
 import AppCard from "./cards/AppCard";
 
 
-const AllAppsPage = async () => {
+const AllAppsPage = async ({from}) => {
 const res = await fetch('http://localhost:3000/data.json');
 const apps =await res.json();
-console.log(apps)
+// console.log(apps)
+console.log(from,'froommmmmmmmmmm')
 
 
   return (
     <div className='mt-10 max-w-7xl mx-auto'>
-      <h2 className='text-3xl font-bold text-center'>Trending Apps</h2>
+      <h2 className='text-3xl font-bold text-center'>{from==='homePage'?'Trending Apps':'All Apps'}</h2>
       <p className='text-[#627382] font-light text-center mt-2'>Explore All Trending Apps on the Market developed by us</p>
     
-    {loading?(div)}
-    
+   
     <div className="grid grid-cols-3 gap-5 ">
-      {apps.map(app=><AppCard app={app} key={app.id}></AppCard>)}
+      {apps.slice(0,from==='homePage'?9:apps.length).map(app=><AppCard app={app} key={app.id}></AppCard>)}
     </div>
+  
+    <div className="text-center  flex justify-center items-center mt-10 mb-15">
+      <Link href={'/apps'} ><button className="btn btn-primary" >View All</button></Link>
+    </div>
+    
     </div>
   );
 };

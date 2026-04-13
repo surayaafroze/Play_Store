@@ -17,7 +17,7 @@ const HomePage =async () => {
 <Stat></Stat>
 
 <main>
-  <AllAppsPage></AllAppsPage>
+  <AllAppsPage from='homePage'></AllAppsPage>
 </main>
 </div>
 

@@ -1,9 +1,10 @@
+import AllAppsPage from "@/component/AllAppsPage";
 
 
 const AllApps = () => {
   return (
     <div>
-     All apps are here 
+     <AllAppsPage from='apps'></AllAppsPage>
     </div>
   );
 };
