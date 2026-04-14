@@ -1,11 +1,13 @@
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaDownload, FaStar } from 'react-icons/fa';
 
 const AppCard = ({app}) => {
 
   const {downloads,ratingAvg,title,image,} =app
   return (
+    <Link href={`/apps/${app.id}`}>
     <div className="card bg-base-100 w-96 shadow-sm">
 
     {/* <Image
@@ -36,7 +38,12 @@ height={200}
     <span className='flex p-4'><FaStar></FaStar>{ratingAvg}</span>
    </div>
   </div>
+  
+                  
+                  
+             
 </div>
+                  </Link>
   );
 };
 
