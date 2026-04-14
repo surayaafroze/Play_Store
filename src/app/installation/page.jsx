@@ -27,8 +27,10 @@ height={200}
 >
 
 </Image>
-<button className='btn btn-primary' onClick={()=>handelUninstall (app)}>delete</button>
+<button className='btn btn-primary' onClick={()=>handelUninstall (app)}>Uninstall</button>
 </div>
+<h2 className='text-2xl font-bold text-center'>{app.title}</h2>
+<h2 className='text-2xl font-bold text-center'>{app.companyName}</h2>
     </div>)}
     </div>
   );
