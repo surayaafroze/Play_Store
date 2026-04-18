@@ -30,27 +30,23 @@ This project is built for learning and practice purposes to improve frontend dev
 ## 📂 Project Structure
 
 
-
 Clone the repository:
-```bash
+```
 git clone https://github.com/surayaafroze/Play_Store.git
-
+```
 Go to project folder:
-```bash
+```
 cd Play_Store
-
+```
 Install dependencies:
-```bash
+```
 npm install
-
-
+```
 Run the development server:
-```bash
+```
 npm run dev
-
-
-
+```
 Open in browser:
-```bash
+```
 http://localhost:3000
-
+```
