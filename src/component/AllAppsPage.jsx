@@ -4,10 +4,10 @@ import AppCard from "./cards/AppCard";
 
 
 const AllAppsPage = async ({from}) => {
-const res = await fetch('http://localhost:3000/data.json');
+const res = await fetch('http://play-store-opal.vercel.app/data.json',{cache:'no-store'});
 const apps =await res.json();
 // console.log(apps)
-console.log(from,'froommmmmmmmmmm')
+console.log(from,'from')
 
 
   return (

@@ -13,7 +13,7 @@ import { HashLoader } from "react-spinners";
 
 const AppsDetailsPage =async ({params}) => {
   const {id} =await params;
-const res = await fetch(`http://localhost:3000/data.json`);
+const res = await fetch(`http://play-store-opal.vercel.app/data.json`,{cache:'no-store'});
 const apps =await res.json();
 
   const app =apps.find((app)=>app.id==id)

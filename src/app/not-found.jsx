@@ -1,8 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link';
+import React from 'react';
 
-export default function NotFound() {
+const NotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center px-4">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center px-4">
       
       <h1 className="text-6xl font-bold text-red-500">404</h1>
       
@@ -22,4 +23,6 @@ export default function NotFound() {
       
     </div>
   );
-}
+};
+
+export default NotFound;
