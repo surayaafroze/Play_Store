@@ -1,4 +1,4 @@
-# 📱 Play Store App Clone
+# 📱 Play Store App 
 
 A modern Play Store UI clone built with React/Next.js and deployed on Vercel.  
 This project is built for learning and practice purposes to improve frontend development skills.
@@ -11,7 +11,7 @@ This project is built for learning and practice purposes to improve frontend dev
 
 - 🏠 Beautiful home page with app listing
 - 📱 App details page
-- 🔍 Search functionality (if implemented)
+- 🔍 Search functionality 
 - 🎨 Clean and responsive UI design
 - ⚡ Fast performance using Next.js
 - 🌐 Deployed on Vercel
@@ -21,38 +21,36 @@ This project is built for learning and practice purposes to improve frontend dev
 ## 🛠️ Tech Stack
 
 - **Frontend:** React / Next.js  
-- **Styling:** CSS / Tailwind CSS (if used)  
-- **Data:** JSON / API (if used)  
+- **Styling:** CSS / Tailwind CSS 
+- **Data:** JSON / API  
 - **Deployment:** Vercel  
 
 ---
 
 ## 📂 Project Structure
 
-```bash
-/app or /pages
-/components
-/public
-/styles
 
 
 Clone the repository:
-
+```bash
 git clone https://github.com/surayaafroze/Play_Store.git
 
 Go to project folder:
-
+```bash
 cd Play_Store
 
 Install dependencies:
-
+```bash
 npm install
 
-Run the development server:
 
+Run the development server:
+```bash
 npm run dev
 
-Open in browser:
 
+
+Open in browser:
+```bash
 http://localhost:3000
 
